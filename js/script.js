@@ -10,9 +10,23 @@ var leftPlayer, rightPlayer;
 function onYoutubeIframeAPIReady() {
 	leftPlayer = new YT.Player('leftPlayer', {
 		// config leftPlayer
+		height: '390',
+          width: '640',
+          videoId: 'iNJdPyoqt8U'
+          // events: {
+          //   'onReady': onPlayerReady,
+          //   'onStateChange': onPlayerStateChange
+          // }
 	});
 	rightPlayer = new YT.Player('rightPlayer', {
 		// config rightPlayer
+		height: '390',
+          width: '640',
+          videoId: 'iNJdPyoqt8U'
+          // events: {
+          //   'onReady': onPlayerReady,
+          //   'onStateChange': onPlayerStateChange
+          // }
 	});
 }
 
@@ -24,5 +38,7 @@ function playVideos() {
     var t = document.createTextNode("Playing!");
     p.appendChild(t);
     document.body.appendChild(p);
-    alert("haaaa");
+    
+    leftPlayer.playVideo();
+    rightPlayer.playVideo();
 }
