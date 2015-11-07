@@ -3,18 +3,32 @@
     <head>
         <title>definitube</title>
         <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     
     <body>
-        	<h1>definitube</h1>
+        	<h1>DefiniTube</h1>
+        	<table>
+        	<tr>
+        	<td>
+        	<div id="playerContainer">
+	        	<div id="player"></div>
+        	</div>
+        	</td>
+        	<td>
+        	<div id="player2Container">
+	        	<div id="player2"></div>
+        	</div>
+        	</td>
+        	</tr>
+        	</table>
 
-        <table>
-            <tr>
-                <td id="leftplayer"></td>
-                <td id="rightPlayer"></td>
-            </tr>
-        </table>
-        <button onclick="playVideos()">Play</button>
+        	<br />
+
+        	<div id="controls">
+		        <button onclick="playVideos()">Play</button>
+		        <button onclick="pauseVideos()">Pause</button>
+	        </div>
     </body>
 
 </html>
